@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppPruebaXamarin.Registrar">
+    <Grid>
+        <Image Source="fondo.jpg" Aspect="AspectFill"/>
+        <BoxView Color="LightBlue" Opacity="0.8" />
+        <ScrollView>
+            <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="1"  Padding="5,5" HorizontalOptions="Center">
+                <Label Text="CREAR USUARIO" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+            </StackLayout>
+            <StackLayout Grid.Row="2"  Padding="20,20">
+                <Label Text="Usuario :" TextColor="Black" FontSize="16" FontAttributes="Bold"/>
+                <Entry Placeholder=" Ingrese Nuevo Usuario" FontSize="16" x:Name="txtUsuario"/>
+            </StackLayout>
+            <StackLayout Grid.Row="3" Padding="20,20">
+                <Label Text="Contraseña :" TextColor="Black" FontSize="16" FontAttributes="Bold"/>
+                <Entry Placeholder="Contraseña" IsPassword="True" FontSize="16" x:Name="txtContraseña"/>
+            </StackLayout>
+            <StackLayout Grid.Row="4" Padding="20,20">
+                <Label Text="Correo :" TextColor="Black" FontSize="16" FontAttributes="Bold"/>
+                <Entry Placeholder="ejemplo@gmail.com" FontSize="16" x:Name="txtCorreo"/>
+            </StackLayout>
+            <StackLayout Grid.Row="5" Padding="20,20">
+                <Label Text="Telefono :" TextColor="Black" FontSize="16" FontAttributes="Bold"/>
+                <Entry Placeholder="Telefono" FontSize="16" x:Name="txtTelefono"/>
+            </StackLayout>
+            <StackLayout Grid.Row="6" Padding="20,20">
+                <Button Text="Registrar" BorderColor="Black" BorderWidth="2" TextColor="White" BackgroundColor="CadetBlue" Clicked="Button_Clicked" CornerRadius="25"/>
+            </StackLayout>
+        </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>
