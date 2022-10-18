@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace AppPruebaXamarin
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Puntos : ContentPage
+    public partial class Inicio : ContentPage
     {
-        public Puntos()
+        public Inicio()
         {
             InitializeComponent();
         }

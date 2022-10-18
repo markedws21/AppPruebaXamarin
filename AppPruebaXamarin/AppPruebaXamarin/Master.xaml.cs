@@ -33,7 +33,7 @@ namespace AppPruebaXamarin
 
         private async void btnPuntos_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Puntos());
+            await Navigation.PushAsync(new PuntosVenta());
         }
     }
 }

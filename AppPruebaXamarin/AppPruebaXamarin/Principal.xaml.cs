@@ -16,7 +16,7 @@ namespace AppPruebaXamarin
         {
             InitializeComponent();
             this.Master = new Master();
-            this.Detail = new NavigationPage(new Puntos());
+            this.Detail = new NavigationPage(new Inicio());
             App.MasterDet = this;
         }
     }
